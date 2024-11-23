@@ -240,9 +240,9 @@ class Ball(pygame.sprite.Sprite):
             self.image.get_width() // 2 - 3  # 半径减去轮廓宽度
         )
 
-        # 在球的中心绘制文本 "BOE"
+        # 在球的中心绘制文本 "S"
         font = pygame.font.Font(None, self.image.get_width() // 2)  # 使用默认字体，字体大小为球的1/2宽度
-        text_surface = font.render("BOE", True, (0, 0, 0))  # 渲染文本，颜色为黑色
+        text_surface = font.render("S", True, (0, 0, 0))  # 渲染文本，颜色为黑色
         text_rect = text_surface.get_rect(center=(self.image.get_width() // 2, self.image.get_height() // 2))  # 将文本居中
         self.image.blit(text_surface, text_rect)  # 将文本绘制到球的 surface 上
 
